@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/quran/:path*",
+      "destination": "https://api.quran.com/api/v4/:path*"
+    },
+    {
+      "source": "/api/alquran/:path*",
+      "destination": "https://api.alquran.cloud/v1/:path*"
+    }
+  ]
+}
