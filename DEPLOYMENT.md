@@ -87,13 +87,10 @@ Click the button below to deploy directly:
 
 ### vercel.json
 
-The project includes a `vercel.json` file with:
+The project includes a simplified `vercel.json` file with:
 
 ```json
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": "vite",
   "rewrites": [
     {
       "source": "/(.*)",
@@ -117,7 +114,7 @@ The project includes a `vercel.json` file with:
 **What this does:**
 - Routes all paths to `index.html` for SPA routing
 - Sets long-term cache headers for static assets
-- Configures Vite as the build framework
+- Vercel auto-detects Vite framework from `package.json`
 
 ## Environment Variables (Optional)
 

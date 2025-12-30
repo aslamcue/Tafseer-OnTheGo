@@ -8,9 +8,9 @@ Click this button:
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/aslamcue/Tafseer-OnTheGo)
 
-### Step 2: Configure
+### Step 2: Deploy
 
-1. Vercel will auto-detect settings from `vercel.json`
+1. Vercel will auto-detect Vite framework
 2. Click "Deploy"
 3. Done! ✅
 
@@ -34,7 +34,7 @@ Your app will be live at: `https://your-project-name.vercel.app`
 
 3. **Import Repository**
    - Select `Tafseer-OnTheGo` from your repositories
-   - Vercel auto-detects the configuration ✨
+   - Vercel auto-detects Vite configuration ✨
 
 4. **Deploy**
    - Click "Deploy"
@@ -56,11 +56,11 @@ vercel --prod
 
 ## What Happens Automatically
 
-✅ **Build Command:** `npm run build`  
-✅ **Output Directory:** `dist`  
-✅ **Framework:** Vite (auto-detected)  
-✅ **SPA Routing:** All routes → index.html  
-✅ **Asset Caching:** 1 year cache for static files  
+✅ **Build Command:** `npm run build` (auto-detected)  
+✅ **Output Directory:** `dist` (auto-detected)  
+✅ **Framework:** Vite (auto-detected from package.json)  
+✅ **SPA Routing:** All routes → index.html (configured in vercel.json)  
+✅ **Asset Caching:** 1 year cache for static files (configured in vercel.json)  
 ✅ **HTTPS:** Enabled by default  
 ✅ **CDN:** Global edge network  
 
@@ -85,6 +85,7 @@ Pull requests get their own preview URL for testing
 **Build fails?**
 - Check the build logs in Vercel dashboard
 - Ensure all dependencies are in `package.json`
+- Verify Node.js version is 18+ (set in Vercel settings if needed)
 
 **404 on routes?**
 - Already fixed! `vercel.json` handles SPA routing
