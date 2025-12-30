@@ -8,7 +8,7 @@ import {
   Mic2, Headphones, Radio, Menu, Search, ToggleLeft, ToggleRight,
   Lock
 } from 'lucide-react';
-import './App.css';
+import './styles/App.css';
 
 // --- CONFIGURATION ---
 const API_KEY = "YOUR_OPENAI_KEY_HERE"; // 🔴 PASTE SK-KEY HERE
